@@ -3,32 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rivance - Carefree Evening</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Squirers - Футболка Rivance</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="product-style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="title">carefree evening</div>
-      <div class="subtitle">rivance</div>
+    <div class="container">
+      <!-- Изображение товара -->
+      <div class="product-image">
+        <img src="photo1.jpg" alt="Футболка Rivance" />
+        <img src="photo2.jpg" alt="Футболка Rivance" />
+        <img src="photo3.jpg" alt="Футболка Rivance" />
+        <div class="slide-indicators">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Обновлённый блок цены -->
+      <div class="price-container">
+        <div class="price-column">
+          <div class="old-price">4 990 ₽</div>
+          <div class="new-price">2 490 ₽</div>
+        </div>
+        <div class="discount-badge">
+          <div class="discount-percent">-30%</div>
+          <div class="discount-timer">
+            <span>До релиза:</span>
+            <span id="discount-time">2д 12:34:56</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Выбор размера -->
+      <div class="size-selector">
+        <div class="size-title">РАЗМЕР</div>
+        <div class="size-buttons">
+          <button class="size-btn">S</button>
+          <button class="size-btn active">M</button>
+          <button class="size-btn">L</button>
+        </div>
+      </div>
+
+      <!-- Описание -->
+      <div class="description">
+        <div class="description-header">
+          <h3>Описание товара</h3>
+          <button class="toggle-btn">▼</button>
+        </div>
+        <div class="description-content">
+          <p>
+            <strong>Футболка Rivance</strong> – это идеальное сочетание комфорта
+            и лаконичного стиля. Изготовлена из натурального хлопка (футер
+            2-нитка) плотностью 240 г/м². Мягкая и дышащая ткань не стесняет
+            движений и отлично держит форму даже после многократных стирок.
+            Широкий крой дарит ощущение свободы, а фирменная DTF-печать на груди
+            добавляет современный характер вашему образу.
+          </p>
+
+          <!-- Новая история -->
+          <div class="story">
+            <h4>История создания</h4>
+            <p>
+              Представьте себе тёплый летний вечер: лёгкий бриз с моря ласкает
+              лицо, небо окрашено в приглушённые тона бархата, и где-то вдали
+              слышится спокойный шорох прибоя. Вы идёте по песчаному берегу
+              босиком, чувствуя, как с каждым шагом уходит суета прошедшего дня
+              и наполняет вас лёгкость безмятежности.
+            </p>
+
+            <p>
+              Футболка Rivance родилась именно в таком мгновении свободы: она
+              впитывает аромат солёного ветра и сохраняет тепло закатного
+              солнца. Надев её, вы словно возвращаетесь к тем моментам, когда
+              всё вокруг кажется безмятежным, а в сердце воцаряется легкое
+              вдохновение — напоминание о том, что даже в будни можно найти свой
+              собственный морской закат.
+            </p>
+
+            <p>Позвольте себе этот вечер без забот — вместе с Rivance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Уход -->
+      <div class="care-instructions">
+        <div class="care-title">Уход за изделием</div>
+        <ul>
+          <li>Стирать вывёрнутой наизнанку при 30 °C, деликатный режим</li>
+          <li>Мягкие средства без отбеливателя</li>
+          <li>Избегать машинной сушки и сильного отжима</li>
+          <li>Гладить с изнанки при ≤110 °C, не касаясь печати</li>
+        </ul>
+      </div>
+
+      <!-- Кнопка оплаты -->
+      <button class="checkout-btn">К ОПЛАТЕ</button>
     </div>
 
-    <div class="timer">
-      <div class="timer-item">
-        <div class="timer-number" id="days">0</div>
-        <div class="timer-label">дни</div>
-      </div>
-      <div class="timer-item">
-        <div class="timer-number" id="hours">0</div>
-        <div class="timer-label">часы</div>
-      </div>
-      <div class="timer-item">
-        <div class="timer-number" id="minutes">0</div>
-        <div class="timer-label">минуты</div>
-      </div>
-    </div>
-
-    <button class="preorder-btn">Предзаказ</button>
-
-    <script src="app.js"></script>
+    <script src="product-script.js"></script>
   </body>
 </html>
